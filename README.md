@@ -1,7 +1,7 @@
 # my-drone-python-example
 
 ## requirements:
-- download and setup ngrok
+- download and setup [ngrok](https://ngrok.io)
 - setup github oauth app and get client id and secret, homepage url and authorization callback url must match ngrok generated url, auth url is host with /login
 - openssl
 - docker
@@ -46,4 +46,12 @@ docker run --detach `
   --restart=always `
   --name=runner `
   drone/drone-runner-docker:1
+ 
+#verify with
+docker logs runner
 ```
+
+may need to sync the repo and activate it in drone server gui before commits picked up
+![image](https://user-images.githubusercontent.com/1649129/183009071-a2a9e3c8-5dcd-4662-9cbb-c437f4209781.png)
+
+documentation for drone .drone.yml files at [drone.io](https://drone.io)
