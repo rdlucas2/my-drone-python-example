@@ -2,7 +2,7 @@
 
 ## requirements:
 - download and setup ngrok
-- setup github oauth app and get client id and secret
+- setup github oauth app and get client id and secret, homepage url and authorization callback url must match ngrok generated url, auth url is host with /login
 - openssl
 - docker
 
